@@ -1,0 +1,187 @@
+/* Web Design */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* General Styles */
+
+*{
+    --PureWhite:#ffffff;
+    --mainFont:"Open Sans", sans-serif;
+    --CurrentFont:"Raleway", sans-serif;
+    --H1Font:"DM Sans", sans-serif;
+    --SubTitle:"Kdam Thmor Pro",sans-serif;
+    --blendColor:#353535b2;
+    --Red:#D95560;
+    --transitionColor:#D0D9D9;
+    --CardColor:#D0D9D9;
+    --Shadow:#2323236a;
+    --shadow:1px 1px 5px 2px var(--Shadow);
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+    background-color:var(--PureWhite);
+}
+html{
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin-top:0%;
+    width: 100%;
+    height: 30vw;
+    background-color:var(--blendColor);
+    background-image: url(/public/img/bg1.gif);
+    background-repeat:no-repeat;
+    background-size:1800px 600px;
+    background-blend-mode:multiply;
+}
+
+/* Nav styles */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vw;
+}
+nav ul{
+    display: flex;
+    justify-content:right;
+    margin: 0%;
+    display:inline-flex;
+    width:100%;
+    padding: 2%;
+    list-style:none;
+}
+nav ul li  {
+    padding: 3%;
+}
+nav ul li a{
+    color:var(--PureWhite);
+    text-decoration: none;
+    font-size:1.3vw;
+    font-family: var(--mainFont);
+    font-weight:500;
+}
+
+/* Card Styles */
+.ContainerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    bottom:22vw;
+}
+.CardAboutMe{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:24vw;
+    width: 50%;
+    padding: 4%;
+    background-color:var(--CardColor);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}   
+
+.Child1 .Me {
+    height: 20vw;
+    width: 20vw;
+}
+.Child1{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    padding-right: 5%;
+}
+.Child2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+.TextBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--CurrentFont);
+    height:100%;
+    width: 100%;
+    padding: 5%;
+    margin: 0%;
+}
+.TextBody .Labels{
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    align-self: center;
+    padding-right: 4%;
+}
+.TextBody .LabelsText{
+    display: flex;
+    flex-direction: column;
+    justify-self:right;
+    align-self: center;
+    padding-left: 9%;
+    text-align: right;
+}
+.TextBody .LabelsText #Direccion{
+    font-size: 0.9vw;
+}
+.Title1 h1{
+    font-family: var(--H1Font);
+    font-size: 1.7vw;
+}
+.Title1 .Sub {
+    color:var(--Red);
+    font-family: var(--SubTitle);
+}
+
+.SocialMedia{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position:absolute;
+    top:91%;
+    background-color:var(--Red);
+    width: 58%;
+    height:6vw;
+    border-radius:15px;
+    box-shadow: var(--shadow);
+}
+.SocialMedia i{
+    font-size:1.3vw;
+    color:var(--PureWhite);
+}
+
+.Resume{
+    width:100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15vw;
+}
+.Resume a{
+    padding: 1.2%;
+    border-radius: 30px;
+    background-color: var(--Red);
+    color: var(--PureWhite);
+    text-decoration: none;
+    font-family: var(--CurrentFont);
+}
