@@ -93,6 +93,10 @@ nav ul li a{
     background-color:var(--CardColor);
     box-shadow: var(--shadow);
     border-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }   
 
 .Child1 .Me {
@@ -123,6 +127,7 @@ nav ul li a{
     width: 100%;
     padding: 5%;
     margin: 0%;
+    font-size: 1vw;
 }
 .TextBody .Labels{
     display: flex;
@@ -130,6 +135,10 @@ nav ul li a{
     justify-self: left;
     align-self: center;
     padding-right: 4%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 .TextBody .LabelsText{
     display: flex;
@@ -149,6 +158,7 @@ nav ul li a{
 .Title1 .Sub {
     color:var(--Red);
     font-family: var(--SubTitle);
+    font-size: 1.2vw;
 }
 
 .SocialMedia{
@@ -168,6 +178,8 @@ nav ul li a{
     color:var(--PureWhite);
 }
 
+/* Button */
+
 .Resume{
     width:100%;
     height: 4vw;
@@ -184,4 +196,106 @@ nav ul li a{
     color: var(--PureWhite);
     text-decoration: none;
     font-family: var(--CurrentFont);
+}
+
+/* Presentation styles */
+
+.Presentation{
+    position: relative;
+    bottom: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MyPresentation{
+    width:50%;
+}
+.MyPresentation p{
+    font-family: var(--CurrentFont);
+    text-align:center;
+    font-size:1.3vw;
+}
+/* Education Styles */
+.EduContainer{
+    padding: 0% 1%;
+}
+.Educacion{
+    display: grid;
+    grid-template-areas: "Title    Title      Title"
+                         "img1   School1      Desc1"
+                         "img2   School2      Desc2";
+    grid-template-columns:auto 40% 40%;
+    margin-bottom:42%;
+    grid-template-rows:auto;
+    width: 100%;
+    height: 45vw;
+    font-family: var(--CurrentFont);
+    background-color: var(--CardColor);
+    gap: 2%;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-right: 2%;
+}
+.Logo i {
+    font-size: 6vw;
+}
+.Educacion .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: Title;
+    border-top: 2px solid var(--blendColor);
+    font-family: var(--H1Font);
+    font-size: 2vw;
+    color: var(--blendColor);
+}
+.Educacion .School1{
+    grid-area:School1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.Educacion .img1{
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Educacion img{
+    height: 10vw;
+    width: 10vw;
+}
+.Educacion .Desc1{
+    grid-area:Desc1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 1.5vw;
+}
+.Educacion .School2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    grid-area:School2;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.Educacion .img2{
+    grid-area: img2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Educacion .Desc2{
+    grid-area:Desc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
 }
