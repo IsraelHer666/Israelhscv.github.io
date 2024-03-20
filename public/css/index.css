@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../public/BgGift.gif);
-    background-size:cover;
+ background-color:#dadadadc;
 }
 header{
     display: flex;
